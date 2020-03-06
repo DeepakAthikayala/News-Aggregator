@@ -1,0 +1,109 @@
+<div class="row m-0 my-5">
+    
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2" routerLink="/news" 
+        [queryParams]="{category: 'business'}">Business</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of businessArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'business'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'entertainment'}">Entertainment</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of entertainmentArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'entertainment'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'general'}">General</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of generalArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'general'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'health'}">Health</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of healthArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'health'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'science'}">Science</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of scienceArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'science'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'sports'}">Sports</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of sportArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'sports'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 my-2 shadow">
+        <h4 class="text-success my-2"
+        routerLink="/news" [queryParams]="{category: 'technology'}">Technology</h4>
+        <div class="row">
+            <div class="col-md-6 my-2 news" 
+                *ngFor="let article of technologyArticles"
+                routerLink="/newsArticle"
+                [queryParams]="{category: 'technology'}"
+                (click)="selectNewsArticle(article)">
+                    <img class="w-100" src="{{ article.urlToImage }}" alt="Image">
+                    <p class="font-weight-bold">{{ article.title }}</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,8 @@
+.card:hover h5 {
+    text-decoration: underline;
+    color: forestgreen;
+}
+
+.card:hover {
+    cursor: pointer;
+}

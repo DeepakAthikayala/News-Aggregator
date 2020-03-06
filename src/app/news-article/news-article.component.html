@@ -1,0 +1,11 @@
+<div class="w-100 pr-5">
+    <img class="w-100 mt-5" src="{{ articleToRead.urlToImage }}" alt="">
+    <p class="text-muted">
+        Published on: {{ articleToRead.publishedAt }}, Author: {{ articleToRead.author }}
+    </p>
+    <h3 class="font-weight-normal text-center d-block">{{ articleToRead.title }}</h3>
+    <i class="my-1">{{ articleToRead.description }}</i>
+    <p class="my-3">{{ articleToRead.content }} <a href="{{ articleToRead.url }}" target="blank">Read More...</a></p>
+</div>
+
+   

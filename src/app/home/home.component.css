@@ -1,0 +1,7 @@
+h4:hover {
+    text-decoration: underline;
+}
+
+.news:hover p {
+    text-decoration: underline;
+}
